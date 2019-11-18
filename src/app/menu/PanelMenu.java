@@ -9,7 +9,7 @@ import app.Assets;
 import enums.EButtonState;
 import enums.EButtonType;
 import game.GameState;
-import listener.ClickListener;
+import listeners.ClickListener;
 import ui.ImageButton;
 
 public class PanelMenu extends JPanel {

@@ -18,7 +18,7 @@ import enums.EButtonType;
 import enums.EMouseState;
 import graphics.TransformImage;
 import helpers.Sound;
-import listener.ClickListener;
+import listeners.ClickListener;
 
 public class ImageButton extends JComponent {
 	
