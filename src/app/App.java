@@ -12,7 +12,7 @@ public class App {
 				try {
 					SplashScreenFrame sp = new SplashScreenFrame();
 					//Thread.sleep(3500);
-					Thread.sleep(500);
+					Thread.sleep(1500);
 					new AppFrame();
 					sp.setVisible(false);
 					sp.dispose();

@@ -53,6 +53,16 @@ public class Assets {
 		return imageButtonInfo;
 	}
 	
+	private static BufferedImage imageButtonBack;	
+	public static BufferedImage getImageButtonBack() {
+		return imageButtonBack;
+	}
+	
+	private static BufferedImage imageButtonMenuOptionNumbers;	
+	public static BufferedImage getImageButtonMenuOptionNumbers() {
+		return imageButtonMenuOptionNumbers;
+	}	
+	
 	// fin imagenes
 	
 	
@@ -100,6 +110,8 @@ public class Assets {
 			imageButtonSoundOff = helpers.Loader.ImageLoader("/images/buttons/button-sound-off.png");
 			imageButtonClose = helpers.Loader.ImageLoader("/images/buttons/button-close.png");
 			imageButtonInfo = helpers.Loader.ImageLoader("/images/buttons/button-info.png");
+			imageButtonBack = helpers.Loader.ImageLoader("/images/buttons/button-back.png");
+			imageButtonMenuOptionNumbers = helpers.Loader.ImageLoader("/images/buttons/button-menu-option-numbers.png");
 			
 			
 			//musicMainBackgound = helpers.Loader.SoundLoader("/sounds/app/menu-background.wav");

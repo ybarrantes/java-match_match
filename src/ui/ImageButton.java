@@ -24,13 +24,32 @@ public class ImageButton extends JComponent {
 	
 	private static final long serialVersionUID = 1L;
 	
+	// constantes de clase
 	private final float SCALE_FACTOR_ENTERED = 1.05f;
 	private final float SCALE_FACTOR_PRESSED = 0.95f;
 	private final float OFFSET_ENTERED = 10.0f;
 	private final float OFFSET_PRESSED = 10.0f;
 	
+	// listener de evento click
 	private ClickListener clickListener;
 	
+	private String tag;
+	/**
+	 * Devuelve un texto personalizado para uso del desarrollador
+	 * @return String
+	 */
+	public String getTag() {
+		return tag;
+	}
+	/**
+	 * Asigna un texto personalizado para uso del desarrollador
+	 * @param tag
+	 */
+	public void setTag(String tag) {
+		this.tag = tag;
+	}
+
+
 	protected EButtonState state;	
 	public EButtonState getState() {
 		return state;
@@ -109,7 +128,11 @@ public class ImageButton extends JComponent {
 		this.repaint();
 	}
 	
-	protected Component parentGraphicsComponent;
+	protected Component parentGraphicsComponent;	
+	public Component getParentGraphicsComponent() {
+		return parentGraphicsComponent;
+	}
+	
 	
 	
 	public void setClickListener(ClickListener listener) {
@@ -135,6 +158,7 @@ public class ImageButton extends JComponent {
 	
 	
 	private void init() {
+		this.setDoubleBuffered(true);
 		this.clickListener = null; 
 		
 		state = EButtonState.NONE;
@@ -303,7 +327,7 @@ public class ImageButton extends JComponent {
 		g.dispose();
 		img = null;
 		
-		System.out.println("pintando boton");
+		//System.out.println("pintando boton");
 	}	
 
 

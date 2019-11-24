@@ -40,7 +40,7 @@ public class AppFrame extends JFrame {
 
 		init();
 		
-		PanelMenu panelPrincipal = new PanelMenu(this);
+		PanelPrincipal panelPrincipal = new PanelPrincipal(this);
 		add(panelPrincipal);
 
 		setVisible(true);
