@@ -5,7 +5,6 @@ import java.awt.Color;
 import javax.swing.JPanel;
 
 import app.Assets;
-import enums.EButtonState;
 import ui.ImageButton;
 
 public class PanelInfo extends JPanel {

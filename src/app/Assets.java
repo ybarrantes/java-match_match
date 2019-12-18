@@ -58,6 +58,11 @@ public class Assets {
 		return imageButtonBack;
 	}
 	
+	private static BufferedImage imageCard;	
+	public static BufferedImage getImageCard() {
+		return imageCard;
+	}
+	
 	private static BufferedImage imageButtonMenuOptionNumbers;	
 	public static BufferedImage getImageButtonMenuOptionNumbers() {
 		return imageButtonMenuOptionNumbers;
@@ -112,6 +117,8 @@ public class Assets {
 			imageButtonInfo = helpers.Loader.ImageLoader("/images/buttons/button-info.png");
 			imageButtonBack = helpers.Loader.ImageLoader("/images/buttons/button-back.png");
 			imageButtonMenuOptionNumbers = helpers.Loader.ImageLoader("/images/buttons/button-menu-option-numbers.png");
+			
+			imageCard = helpers.Loader.ImageLoader("/images/game/card.png");
 			
 			
 			//musicMainBackgound = helpers.Loader.SoundLoader("/sounds/app/menu-background.wav");

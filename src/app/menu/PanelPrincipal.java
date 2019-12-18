@@ -10,6 +10,7 @@ import app.Assets;
 import enums.EButtonState;
 import enums.EButtonType;
 import enums.EViewMenuPrincipal;
+import game.Board;
 import game.GameState;
 import listeners.ClickListener;
 import ui.ImageButton;
@@ -129,6 +130,15 @@ public class PanelPrincipal extends JPanel {
 		buttonMenuOptionNumbers.setLayout(null);
 		buttonMenuOptionNumbers.setLocation(150, 280);
 		buttonMenuOptionNumbers.setTag(tagButtonGame);
+		buttonMenuOptionNumbers.setClickListener(new ClickListener() {
+
+			@Override
+			public void onClick(MouseEvent e) {
+				new Board();
+				parent.setVisible(false);
+			}
+			
+		});
 	}
 	
 	public void viewMenuPrincipal(EViewMenuPrincipal e) {
