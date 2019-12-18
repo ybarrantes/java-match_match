@@ -63,9 +63,20 @@ public class Assets {
 		return imageCard;
 	}
 	
+	private static BufferedImage imageCardOver;	
+	public static BufferedImage getImageCardOver() {
+		return imageCardOver;
+	}
+	
 	private static BufferedImage imageButtonMenuOptionNumbers;	
 	public static BufferedImage getImageButtonMenuOptionNumbers() {
 		return imageButtonMenuOptionNumbers;
+	}	
+	
+	
+	private static BufferedImage[] imageGameNumbers;	
+	public static BufferedImage[] getImageGameNumbers() {
+		return imageGameNumbers;
 	}	
 	
 	// fin imagenes
@@ -97,6 +108,8 @@ public class Assets {
 		return soundButtonSwitch;
 	}
 	
+	
+	
 	// fin sonidos
 	
 	
@@ -119,6 +132,12 @@ public class Assets {
 			imageButtonMenuOptionNumbers = helpers.Loader.ImageLoader("/images/buttons/button-menu-option-numbers.png");
 			
 			imageCard = helpers.Loader.ImageLoader("/images/game/card.png");
+			imageCardOver = helpers.Loader.ImageLoader("/images/game/card-over.png");
+			
+			imageGameNumbers = new BufferedImage[16];
+			for(int i = 0; i < 8; i++) {
+				imageGameNumbers[i] = helpers.Loader.ImageLoader("/images/game/numbers/" + i + ".png");
+			}
 			
 			
 			//musicMainBackgound = helpers.Loader.SoundLoader("/sounds/app/menu-background.wav");

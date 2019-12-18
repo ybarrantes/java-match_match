@@ -151,7 +151,7 @@ public class ImageButton extends JComponent {
 		}
 		
 		if (clickListener != null)
-			clickListener.onClick(e);
+			clickListener.onClick(e, this);
 	}
 	
 	protected EMouseState mouseState;

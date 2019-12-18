@@ -44,7 +44,7 @@ public class PanelPrincipal extends JPanel {
 		buttonSound.setClickListener(new ClickListener() {
 
 			@Override
-			public void onClick(MouseEvent e) {
+			public void onClick(MouseEvent e, Object sender) {
 				if(buttonSound.getType() == EButtonType.Check) {
 					if(buttonSound.getState() == EButtonState.ON) GameState.mainSound = true;
 					else if(buttonSound.getState() == EButtonState.OFF) GameState.mainSound = false;
@@ -62,7 +62,7 @@ public class PanelPrincipal extends JPanel {
 		buttonMusic.setClickListener(new ClickListener() {
 
 			@Override
-			public void onClick(MouseEvent e) {
+			public void onClick(MouseEvent e, Object sender) {
 				if(buttonMusic.getType() == EButtonType.Check) {
 					if(buttonMusic.getState() == EButtonState.ON) {
 						GameState.mainMusic = true;
@@ -85,7 +85,7 @@ public class PanelPrincipal extends JPanel {
 		buttonInfo.setClickListener(new ClickListener() {
 
 			@Override
-			public void onClick(MouseEvent e) {
+			public void onClick(MouseEvent e, Object sender) {
 				viewMenuPrincipal(EViewMenuPrincipal.Info);
 			}
 			
@@ -100,7 +100,7 @@ public class PanelPrincipal extends JPanel {
 		buttonBack.setClickListener(new ClickListener() {
 
 			@Override
-			public void onClick(MouseEvent e) {
+			public void onClick(MouseEvent e, Object sender) {
 				viewMenuPrincipal(EViewMenuPrincipal.Menu);
 			}
 			
@@ -115,7 +115,7 @@ public class PanelPrincipal extends JPanel {
 		buttonClose.setClickListener(new ClickListener() {
 
 			@Override
-			public void onClick(MouseEvent e) {
+			public void onClick(MouseEvent e, Object sender) {
 				System.exit(ABORT);
 			}
 			
@@ -133,7 +133,7 @@ public class PanelPrincipal extends JPanel {
 		buttonMenuOptionNumbers.setClickListener(new ClickListener() {
 
 			@Override
-			public void onClick(MouseEvent e) {
+			public void onClick(MouseEvent e, Object sender) {
 				new Board();
 				parent.setVisible(false);
 			}
